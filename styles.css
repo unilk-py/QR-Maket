@@ -14,8 +14,8 @@ body {
 
 .card-container {
     width: 100%;
-    max-width: 500px;
-    background-color: #fff;
+    max-width: 450px;
+    background-color: #f4f4f4;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     overflow: hidden;
     position: relative;
@@ -23,23 +23,20 @@ body {
 
 /* --- IMAGES SECTION --- */
 .hero-banner {
-    height: 180px;
     width: 100%;
-    background-color: #ddd; 
-    background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop'); /* Added a sample building background */
-    background-size: cover;
-    background-position: center;
     position: relative;
 }
 
 .company-logo {
-    width: 500px;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    margin: 0px auto;
-    background-color: #fff;
-    overflow: hidden;
+    width: 100%;             /* Occupies most of the width but leaves breathing room */
+    margin: 0 auto;
+}
+
+.company-logo img {
+    max-width: 100%;        /* Ensures image never overflows the container */
+    height: auto;           /* Maintains aspect ratio */
+    object-fit: cover;
+    display: block;
 }
 
 .profile-photo-wrapper {
